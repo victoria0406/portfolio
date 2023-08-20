@@ -18,15 +18,17 @@ export async function getStaticProps({params}:{params:any}) {
     };
 }
 
-export default function Page({postData}:{postData: {title:string, id:string, date:string, contentHtml: string}}) {
-    const router = useRouter();
+export default function Page(
+    {postData:{title, id, date, tags, contentHtml}}
+    :{postData: {title:string, id:string, date:string, tags:string, contentHtml: string}}) {
+    console.log(tags);
     return (
         <main>
-          <h1>{postData.title}</h1>
+          <h1>{title}</h1>
+          <p>작성 날짜: {date}</p>
+          <p>{tags.split('/').map((tag)=>(`#${tag} `))}</p>
           <br />
-          <p>작성 날짜:{postData.date}</p>
-          <br />
-          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </main>
       );
 }
