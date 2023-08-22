@@ -2,7 +2,7 @@ import { getPostData } from "@/lib/posts";
 import { useRouter } from "next/router";
 
 export async function getData(id:string) {
-    const postData = await getPostData(id, 'updates');
+    const postData = await getPostData(id, 'projects');
     return postData;
 }
 
