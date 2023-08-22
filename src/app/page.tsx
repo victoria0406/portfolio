@@ -16,7 +16,7 @@ export default function Home() {
           <p className='text-4xl mb-12'><b>C</b>ode, <b>C</b>reate, <b>C</b>aptivate</p>
           <p className='text-6xl font-bold'>My Front-End Journey</p>
         </div>
-        <div className='flex flex-col justify-center h-screen px-8 bg-primary-300'>
+        {/*<div className='flex flex-col justify-center h-screen px-8 bg-primary-300'>
           <div className='flex justify-between items-center mb-12'>
             <h1 className='text-4xl font-bold text-primary-900 '>Lastest Projects</h1>
             <div className='text-primary-500'>
@@ -57,6 +57,7 @@ export default function Home() {
             ))}
           </div>
         </div>
+                  */}
       </div>
     </main>
   )

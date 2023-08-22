@@ -8,7 +8,6 @@ export default function About() {
             <h1>Contact</h1>
             <ul>
                 <li>Email: victoria0406@kaist.ac.kr</li>
-                <li>Phone: 010-2796-3472</li>
             </ul>
         </main>
 
