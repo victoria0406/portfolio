@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <div className='absolute top-0 select-none w-full'>
-        <div className='flex flex-col justify-center h-screen pl-12 text-primary-800 bg-first-background bg-cover'>
+        <div className='flex flex-col justify-center h-screen pl-12 text-primary-800'>
           <p className='text-4xl mb-12'><b>C</b>ode, <b>C</b>reate, <b>C</b>aptivate</p>
           <p className='text-6xl font-bold'>My Front-End Journey</p>
         </div>

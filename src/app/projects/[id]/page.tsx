@@ -11,7 +11,7 @@ export default async function Page({params:{id}}:{params:{id:string}}) {
     return (
         <main className="p-8 pt-28">
           <h1>{title}</h1>
-          <p>작성 날짜: {date}</p>
+          <p>프로젝트 기한: {date}</p>
           <p>{tags.split('/').map((tag:string)=>(`#${tag} `))}</p>
           <br />
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />

@@ -8,7 +8,7 @@ const buttons = [
 export default function Header() {
     return (
         <header
-            className="flex fixed justify-between items-center text-lg p-8 w-full z-50 select-none"
+            className="flex fixed justify-between items-center text-lg p-8 w-full z-50 select-none backdrop-blur"
         >
             <a
                 href="/"
